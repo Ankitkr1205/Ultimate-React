@@ -13,8 +13,8 @@ const PropsParentNodeP = () => {
     <div>
       <h1>PropsParentNodeP</h1>
       <p>{laptopName.normal}</p>
-      <Button>UPDATE</Button>
-      <Node1c laptopName={laptopName} />
+      <Button onClick={() => setLaptopname({ normal: "Dell" })}>UPDATE</Button>
+      <Node1c laptopName={laptopName} setLaptopname={setLaptopname} />
     </div>
   );
 };
