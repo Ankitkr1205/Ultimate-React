@@ -3,7 +3,7 @@ import Node3c from "./Node3c";
 import { Node1Context } from "./Index";
 
 const Node2c = () => {
-    const Node2context=useContext(a)
+    // const Node2context=useContext()
   return (
     <div>
       <p>Node2c</p>

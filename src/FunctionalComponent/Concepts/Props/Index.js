@@ -9,12 +9,33 @@ const PropsParentNodeP = () => {
     gaming: "msi",
     normal: "lenovo",
     personal: "HP",
-    professional: "macBook"
+    professional: "macBook",
+    others: {
+      phone: "samsung",
+      headphone: "Bose",
+      earphones: "Noise",
+      earpods: "pTron",
+      customers: [
+        "India",
+        {
+          Australia: {
+            phone: "samsung",
+            headphone: "Bose",
+            earphones: "Noise",
+            earpods: "pTron"
+          }
+        },
+        "Japan",
+        "Pakistan"
+      ]
+    }
   });
+  console.log(laptopName.others.customers[1].Australia.headphone);
   return (
     <div>
       <h1>PropsParentNodeP</h1>
       <p>{laptopName.normal}</p>
+      <p>{laptopName.others.customers[1].Australia.headphone}</p>
       <Button onClick={() => setLaptopname({ normal: "Dell" })}>UPDATE</Button>
       <Node1Context.Provider value={laptopName}>
         <Node1c laptopName={laptopName} setLaptopname={setLaptopname} />
