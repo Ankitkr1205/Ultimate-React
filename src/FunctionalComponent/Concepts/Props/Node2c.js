@@ -3,10 +3,12 @@ import Node3c from "./Node3c";
 import { Node1Context } from "./Index";
 
 const Node2c = () => {
-    // const Node2context=useContext()
+    const a = useContext(Node1Context)
+    console.log('---------',a);
   return (
     <div>
-      <p>Node2c</p>
+          <p>Node2c</p>
+          <p>{ a.personal}</p>
       <Node3c />
     </div>
   );

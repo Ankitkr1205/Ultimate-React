@@ -22,7 +22,20 @@ const PropsParentNodeP = () => {
             phone: "samsung",
             headphone: "Bose",
             earphones: "Noise",
-            earpods: "pTron"
+            earpods: "pTron",
+            Speakers: [
+              "JBL",
+              "SONY",
+              "MI",
+              {
+                lenovo: {
+                  phone: "samsung",
+                  headphone: "Bose",
+                  earphones: "Noise",
+                  earpods: "pTron"
+                }
+              }
+            ]
           }
         },
         "Japan",
@@ -30,12 +43,17 @@ const PropsParentNodeP = () => {
       ]
     }
   });
-  console.log(laptopName.others.customers[1].Australia.headphone);
+  console.log(
+    laptopName.others?.customers[1].Australia.Speakers[3].lenovo.earphones
+  );
   return (
     <div>
       <h1>PropsParentNodeP</h1>
       <p>{laptopName.normal}</p>
-      <p>{laptopName.others.customers[1].Australia.headphone}</p>
+      <h2>
+        {laptopName.others?.customers[1].Australia.Speakers[3].lenovo.earphones}
+      </h2>
+      <p>{laptopName.others?.customers[1].Australia.headphone}</p>
       <Button onClick={() => setLaptopname({ normal: "Dell" })}>UPDATE</Button>
       <Node1Context.Provider value={laptopName}>
         <Node1c laptopName={laptopName} setLaptopname={setLaptopname} />

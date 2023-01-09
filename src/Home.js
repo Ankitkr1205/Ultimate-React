@@ -3,22 +3,24 @@
 // import MyState from "./ClassComponent/Index";
 // import Contact from "./FunctionalComponent/Concepts/Contact";
 // import PropsParent from "./FunctionalComponent/Concepts/PropsParent";
-// import LearnContext from "./FunctionalComponent/Concepts/Advance/LearnContext";
-import PropsParentNodeP from "./FunctionalComponent/Concepts/Props/Index";
+// import PropsParentNodeP from "./FunctionalComponent/Concepts/Props/Index";
+// import ContextAPI from "./FunctionalComponent/Concepts/ContextAPI";
 import { Card } from "antd";
+import MultiComponent from "./FunctionalComponent/Concepts/MultiComponent/Index";
 const Home = () => {
   return (
-    <div style={{ backgroundColor: "Black",color:"white" }}>
+    <div style={{ backgroundColor: "Black", color: "white" }}>
       <h1 style={{ textAlign: "center" }}>PARENT COMPONENT</h1>
       {/* <Card><FCindex/></Card> */}
       {/* <LearnReact /> */}
       {/* <MyState /> */}
       {/* <Contact /> */}
       {/* <PropsParent/> */}
-      {/* <LearnContext /> */}
       <Card style={{ backgroundColor: "#aaaaaa" }}>
         <div style={{ textAlign: "center", color: "white" }}>
-          <PropsParentNodeP />
+          {/* <PropsParentNodeP /> */}
+          {/* <ContextAPI /> */}
+          <MultiComponent />
         </div>
       </Card>
     </div>
